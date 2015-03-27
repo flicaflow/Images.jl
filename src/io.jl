@@ -603,3 +603,7 @@ add_image_file_format(".imagine", b"IMAGINE", ImagineFile, "Imagine.jl")
 # PCO b16 image format
 type B16File <: ImageFileType end
 add_image_file_format(".b16", b"PCO-", B16File, "b16.jl")
+
+# AmiraMesh image format
+type AmiraFile <: ImageFileType end
+add_image_file_format(".am", b"# AmiraMesh", AmiraFile, "amira.jl")
